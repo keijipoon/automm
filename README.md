@@ -1,5 +1,5 @@
-# automm
-Automated Map Matching (AutoMM)
+# AutoMM
+Automated Map Matching
 
 ## マップマッチングとは / What is map matching? 
 自動車の走行データ、自転車の走行データなどのGPSデータは、プローブデータと呼ばれます。
