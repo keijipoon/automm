@@ -1,13 +1,13 @@
 # automm
 Automated Map Matching (AutoMM)
 
-## マップマッチングとは
+## マップマッチングとは / What is map matching? 
 自動車の走行データ、自転車の走行データなどのGPSデータは、プローブデータと呼ばれます。
 これらは往々にして、GPSの誤差により少しずれた位置にプロットされてしまうことがあります。
 それを正しく道路の上にプロットされるように修正する作業を、「マップマッチング」と呼びます。
 カーナビなどに使われている技術です。
 
-## マップマッチングのアルゴリズム
+## マップマッチングのアルゴリズム / Algorithm
 以下のように、様々なアルゴリズムが開発されているようです。
 
 ### 幾何解析(Geometric) マップマッチング
@@ -44,7 +44,7 @@ Automated Map Matching (AutoMM)
 変化していくシステムの状態を精度よく推定するための手法である。
 
 
-## 本ライブラリの計算ロジック
+## 本ライブラリの計算ロジック / Computation logic of this library
 ### rtree でできること
 - 近隣検索
 - 交差点探索
@@ -55,7 +55,7 @@ Automated Map Matching (AutoMM)
 - ディスクのシリアル化
 - カスタムストレージの実装(例えばZODBで空間インデックスを実装するため)
 
-### rtree を用いてのマップマッチング
+### rtree を用いてのマップマッチング / Map matching with rtree
 1.マップマッチングしたいGPSデータを取り込む。
 
 2.地図空間上にインデックス（番号）を振る。
@@ -68,3 +68,8 @@ Automated Map Matching (AutoMM)
 
 この手法は、前段落で説明したアルゴリズムの
 幾何解析(Geometric) マップマッチングのうちの point to curve　という手法です。
+
+## 参考文献 / References cited
+BinN studies シリーズ ネットワーク行動学 -都市と移動- p.84 - p.106
+
+http://bin.t.u-tokyo.ac.jp/kaken/data/full-20140926.pdf
